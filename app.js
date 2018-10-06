@@ -20,6 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
+// data file for project
 app.locals.appdata = require('./data.json');
 
 // catch 404 and forward to error handler
